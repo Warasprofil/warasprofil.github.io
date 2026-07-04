@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Menu ke Firestore</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waras Profil</title>
+</head>
+<body>
+<header><h2>Dashboard Waras</h2></header>
+<Nav>
+  <div class="nav1">
+    <p id="total-menu">menu:</p>
+    <p id="total-kategori">kategori:</p>
+  </div>
+  <div class="nav2">
+    <input type="search" placeholder="cari">
+  </div>
+  <div class="nav3">
+    <select name="filter_kat" id="filter_kat">
+      <option value="ALL">semua</option>
+      <option value="Bakmie">Bakmie</option>
+      <option value="Nasi Goreng">Nasi Goreng</option>
+      <option value="Aneka Mie">Aneka Mie</option>
+      <option value="Paket Lauk">Paket Lauk</option>
+      <option value="Menu Nasi">Menu Nasi</option>
+      <option value="Cemilan">Cemilan</option>
+      <option value="Roti dan Pisang">Roti dan Pisang</option>
+      <option value="Tambahan">Tambahan</option>
+      <option value="Minuman">Minuman</option>
+    </select>
+  </div>
+</Nav>
+<div id="card-menu"></div>
+<hr />
+<h2>Tambah Menu Baru</h2>
+<div class="form">
+    <form id="form_menu">
+        <input type="text" id="new_nama" placeholder="Nama Menu" required><br><br>
+        <input type="number" id="new_harga" placeholder="Harga (Contoh: 15K)" required><br><br>
+        <input type="text" id="new_keterangan" placeholder="keterangan"><br />
+        <select name="kategori" id="kategori">
+          <option value="Bakmie">Bakmie</option>
+          <option value="Nasi Goreng">Nasi Goreng</option>
+          <option value="Aneka Mie">Aneka Mie</option>
+          <option value="Paket Lauk">Paket Lauk</option>
+          <option value="Menu Nasi">Menu Nasi</option>
+          <option value="Cemilan">Cemilan</option>
+          <option value="Roti dan Pisang">Roti dan Pisang</option>
+          <option value="Tambahan">Tambahan</option>
+          <option value="Minuman">Minuman</option>
+        </select><br />
+        <input type="checkbox" id="top"><span>top?</span><br /> 
+        <button type="submit" id="btn_submit">Simpan ke Firestore</button>
+    </form>
+</div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
