@@ -90,7 +90,7 @@ async function filter_menu(){
             // Return susunan struktur HTML kartu menu Anda
             return `
                 <div class="card">
-                <img loading="lazy" class="card-img" src="https://warasrest.pages.dev/assets/${menu.nama}.png" onerror="this.onerror=null; this.src='https://warasrest.pages.dev/assets/example.png';">
+                <img loading="lazy" class="card-img" src="https://warasrest.pages.dev/assets/${menu.nama}.png" onerror="this.onerror=null; this.src='https://warasrest.pages.dev/example.png';">
                 <p class="card-txt">${menu.nama}<p/>
                 <p class="card-muted">${menu.keterangan}<p/>
                 <p class="card-harga">${menu.harga}<p/>
